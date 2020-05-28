@@ -1,2 +1,6 @@
 # bibtex-title-cap
-BibTex Title Capitalization
+BibTex Library Auto Capitalization Python Script
+
+Usage:
+
+`python bibtitle.py filename.bib`
