@@ -1,5 +1,5 @@
 # bibtex-title-cap
-BibTex Library Auto Capitalization Python Script
+BibTex Title Tag Auto Capitalization Python Script
 
 Usage:
 
@@ -10,25 +10,27 @@ Tested with python 3.7.x
 
 
 Example:
-Given a file bibliography.bib with entry:
+Given a file "bibliography.bib" with entry:
 
 @article{Author2020,  
   author    = {Important Author},  
   publisher = {Important Press},  
-  title     = {},  
+  title     = {Script: On the Capitalization of BibTex Title Tags},  
   year      = {2020},  
   journal   = {High Impact Journal},  
   pages     = {161--165}  
 }
 
-the script parses each line and modifies only lines with "title" entries.  
+Executing `python bibtitle.py filename.bib`, the script parses each line and modifies only lines with "title" tags.  
 Result:  
   
 @article{Author2020,  
   author    = {Important Author},  
   publisher = {Important Press},  
-  title     = {},  
+  title     = {{S}cript: {O}n the {C}apitalization of {B}ibTex {T}itle {T}ags},  
   year      = {2020},  
   journal   = {High Impact Journal},  
   pages     = {161--165}  
 }  
+
+The script works with multiple bibtex entries.
