@@ -9,7 +9,7 @@ Usage:
 Tested with python 3.7.x
 
 
-Example:
+## Example:  
 Given a file "bibliography.bib" with entry:
 
 @article{Author2020,  
