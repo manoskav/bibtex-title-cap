@@ -21,22 +21,24 @@ for i in range(len(lines)):
 
         tmptitle = hastitle.group('title')
 
-
         lentitle = len(tmptitle)
         j = 0
-        while j < lentitle - 1:
-            char = tmptitle[j]
-            if j > 0:
-                prechar = tmptitle[j-1]
-            else:
-                prechar = ''
 
-            if j < lentitle-1:
-                postchar = tmptitle[j+1]
-            else:
-                postchar = ''
+        while j < lentitle:
+
+            char = tmptitle[j]
                 
             if char.isupper():
+                if j > 0:
+                    prechar = tmptitle[j-1]
+                else:
+                    prechar = ''
+
+                if j < lentitle-1:
+                    postchar = tmptitle[j+1]
+                else:
+                    postchar = ''
+
                 if not (prechar == "{" and postchar == "}"):
                     tmptitle = "".join(
                             [tmptitle[:j], "{"+char+"}", tmptitle[j+1:]])
