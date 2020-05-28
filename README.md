@@ -6,7 +6,7 @@ Usage:
 `python bibtitle.py filename.bib`
 
 
-Tested with python 3.7.x
+Tested with Python 3.7.x
 
 
 ## Example:  
@@ -21,7 +21,7 @@ Given a file "bibliography.bib" with entry:
   pages     = {161--165}  
 }
 
-Executing `python bibtitle.py filename.bib`, the script parses each line and modifies only lines with "title" tags.  
+Executing `python bibtitle.py bibliography.bib`, the script parses each line and modifies only lines with "title" tags.  
 Result:  
   
 @article{Author2020,  
